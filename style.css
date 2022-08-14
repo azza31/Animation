@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+}
+
+li{
+    width: 33px;
+    height: 33px;
+    border-radius: 30%;
+    gap: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+list-style: none;
+animation: loading .8s alternate infinite .5s;
+}
+
+li:nth-child(1){
+    animation-delay: 0.6s;
+}
+li:nth-child(2){
+    animation-delay: 0.8s;
+}
+li:nth-child(3){
+    animation-delay: 1s;
+}
+
+ul{
+    display: flex;
+ flex-direction: row;
+ gap: 20px;
+}
+
+@keyframes loading {
+
+    from{
+         transform:scaleX(1);
+     }
+     
+     to{
+         transform: translateY(-30px) scaleX(1);
+     }
+     
+ }
