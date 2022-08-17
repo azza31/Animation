@@ -15,11 +15,14 @@ body {
 
 }
 
+
+
+
 li{
     width: 33px;
     height: 33px;
     border-radius: 30%;
-    gap: 20px;
+    gap: 20px;  /*  الجاب تستخدم مع الجرييد والفلكس ما ممكن تتفعل بدونهن الحين هنا وجودها ماله فايده */
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
@@ -38,7 +41,7 @@ li:nth-child(3){
 }
 
 ul{
-    display: flex;
+ display: flex;
  flex-direction: row;
  gap: 20px;
 }
